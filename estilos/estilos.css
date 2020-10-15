@@ -1,0 +1,305 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.2em;
+    background: rgb(75, 76, 75);
+}
+
+header{
+    width: 100%;
+    height: 800px;
+    background: url("../images/81deeab1800b71386b7a59b3a0bb392d.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+   
+}
+#contenedor{
+    width: 100%;
+    height: 800px;
+    background-color: rgba(19, 18, 18, 0.775);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#contenedor h1{
+    margin-top: 300px;
+    color: rgb(18, 132, 132);
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 5.0em;
+   
+}
+#contenedor nav{
+    
+    width: 100%;
+    height: 60px;
+    background-color: rgba(165, 165, 165, 0);
+    display: flex;
+    flex-wrap: nowrap;
+   
+    justify-content: space-evenly;
+}
+    nav a{
+        width: 140px;
+        padding: 8px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-family: 'Heebo', sans-serif;
+        color: rgb(162, 162, 162);
+        text-align: center;
+        
+    }
+    nav a:hover{
+        color: #fff;
+        text-decoration: none;
+        background-color: rgba(123, 122, 122, 0.081);
+        border-bottom: 3px solid rgb(204, 204, 204);
+    }
+
+ main{
+     
+     min-height: 500px;
+     width: 980px;
+     background-color: rgba(76, 76, 76, 0.809);
+    margin: auto;     
+ }   
+
+ .contenedores{
+     width: 100%;
+     margin-top: 100px;
+     min-height: 200px;
+     background-color: rgba(5, 57, 57, 0.326);
+     display: flex;
+     display: inline-block;
+     /* flex-wrap: nowrap; */
+    
+     margin: auto;
+     color: rgb(74, 72, 72);
+     
+     font-family: 'Heebo', sans-serif;
+     
+ }
+ .contenedores h2{
+    
+    width: 100%;
+    color: rgb(220, 220, 220);
+     font-size: 2.0em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding: 20px;
+}
+#servicios{
+    margin-bottom: 40px;
+}
+#servicios #logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgb(174, 171, 171);
+    padding-top: 30px;
+
+}   
+
+        #servicios #logos i{
+            
+            text-align: center;
+            font-size: 6.5em;
+            margin-bottom: 12px;
+        }
+        
+        #servicios #logos p{
+            text-align: center;
+               font-size: 84%;
+               padding: 1.5%;
+               color: rgb(255, 255, 255);
+        }
+#servicios #logos #arriba{
+        display: flex;
+    
+    justify-content: space-around;
+    padding: 12px;
+   
+}
+#servicios #logos #arriba #java, #db{
+    width: 50%;
+   display: flex;
+   flex-direction: column;
+    }
+
+
+
+
+
+#servicios #logos #abajo{
+    
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+    #html{
+        display: flex;
+        justify-content: center;
+        padding: 2% 6%;
+    }
+    
+    #html i{
+        margin: 0 10px;
+    }
+    
+    #profolio #carusel{
+        min-height: 200px;
+        padding: 0;
+        
+        
+    }
+#porfolio{
+    margin-bottom: 20px;
+}
+.comentarios p , h5{
+    margin-top: 20px;
+     color: rgb(15, 15, 15);
+     font-weight:bold;
+     background-color: rgba(255, 255, 255, 0.612);
+ 
+ }
+ .comentarios2 h6{
+   margin-top: 20px;
+    color: rgb(245, 240, 240);
+    
+    
+
+}
+#foto{
+    border: solid 4px rgb(98, 98, 98);
+    border-top: solid 5px rgb(86, 85, 85);
+
+}
+
+.comentarios2 h5{
+    color: rgb(241, 241, 241);
+    font-weight:bold;
+}
+#contacto{
+    margin-top: 20px;
+}
+#contacto h2{
+    padding: 0%;
+    margin: 0%;
+    padding-top: 2%;
+}
+#contact{
+    margin-top: 30px;
+    background-image: url("../images/map-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-position-y:center ;
+}
+#contact h3{
+   padding-top: 20px;
+   padding-bottom: 40px;
+    color: rgb(184, 183, 182);
+    
+}
+#enviar{
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    text-transform: uppercase;
+    color: rgb(214, 211, 211);
+    padding-top: 2%;
+    
+
+   
+}
+     footer{
+         margin-top: 10px;
+         background-color: rgb(84, 82, 82);
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+        font-size: 30px;
+     }
+     #redes2{
+         margin-top: 20px;
+         padding-left: 25%;
+         padding-right: 25%;
+         
+         
+          
+         width: 100%;
+         color: rgb(128, 128, 128);
+         display: flex;
+         justify-content: space-around;
+         
+     }
+     
+        footer a {
+           
+            color: rgb(138, 138, 138);
+          font-size: 80%;
+           padding: 0%;
+           margin: 0%;
+        }
+       
+        #insta :hover{
+           color: rgb(255, 14, 163);
+        } #face i:hover{
+            color: rgb(75, 75, 181);
+         } #link i:hover{
+            color: rgb(37, 32, 189);
+         } #git i:hover{
+            color: rgb(68, 68, 68);
+         }
+
+         @media(max-width: 768px){
+                header{
+               width: 100%;
+               
+            }
+            #contenedor h1{
+                font-size: 1.5em;
+            }
+            #contenedor nav{
+                flex-direction: column;
+                margin-bottom: 70px;
+            }
+            #abajo{
+                margin-top: 30px;
+            }
+
+            body{
+                 width: 100%;
+             }
+             main{
+               width: 100%;
+             }
+             footer{
+                 margin-top: 40px;
+             }
+             #contacto{
+                 min-height: 20px;
+             }
+             #redes{
+                 margin-top: 80px;
+             }
+             #redes2 a{
+                 padding-left: 20px;
+             }
+         }
