@@ -180,10 +180,12 @@ header{
 
 }
 #foto{
+    margin-top: 1%;
     border: solid 4px rgb(98, 98, 98);
     border-top: solid 5px rgb(86, 85, 85);
 
 }
+
 
 .comentarios2 h5{
     color: rgb(241, 241, 241);
@@ -300,6 +302,10 @@ footer{
                  margin-top: 80px;
              }
              #redes2 a{
-                 padding-left: 20px;
+                 padding-left: 15px;
+                 padding-right: 15px;
              }
+         }
+         #redes2 a i{
+             font-size: 88%;
          }
