@@ -189,8 +189,13 @@ header{
     border-top: solid 5px rgb(86, 85, 85);
     
 }
-
-
+#whats{
+    color: rgb(57, 57, 57);
+    
+}
+ #whats i:hover{
+     color: rgb(31, 187, 42);
+ }
 .comentarios2 h5{
     color: rgb(241, 241, 241);
     font-weight:bold;
@@ -283,7 +288,7 @@ footer{
             }
             #contenedor nav{
                 flex-direction: column;
-                margin-bottom: 70px;
+                margin-bottom: 25%;
             }
             #abajo{
                 margin-top: 30px;
