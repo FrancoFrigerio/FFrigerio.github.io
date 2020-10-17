@@ -49,7 +49,7 @@ header{
 }
     nav a{
         width: 140px;
-        padding: 8px;
+        padding: 12px;
         margin-top: 10px;
         text-decoration: none;
         font-family: 'Heebo', sans-serif;
@@ -60,7 +60,7 @@ header{
     nav a:hover{
         color: #fff;
         text-decoration: none;
-        background-color: rgba(123, 122, 122, 0.081);
+        background-color: rgba(17, 92, 93, 0.224);
         border-bottom: 3px solid rgb(204, 204, 204);
     }
 
@@ -173,9 +173,13 @@ header{
     text-align: center;
  }
  .comentarios2 h6{
+     color: rgb(35, 35, 35);
+     font-weight: bold;
+ }
+ .comentarios2 h5{
    margin-top: 20px;
     color: rgb(245, 240, 240);
-    
+    background-color: transparent;
     
 
 }
@@ -183,7 +187,7 @@ header{
     margin-top: 1%;
     border: solid 4px rgb(98, 98, 98);
     border-top: solid 5px rgb(86, 85, 85);
-
+    
 }
 
 
@@ -239,9 +243,9 @@ footer{
         font-size: 30px;
      }
      #redes2{
-         margin-top: 20px;
-         padding-left: 25%;
-         padding-right: 25%;
+         margin-top: 40px;
+         padding: 0% 34%;
+
          
          
           
@@ -255,9 +259,8 @@ footer{
         footer a {
            
             color: rgb(138, 138, 138);
-          font-size: 80%;
-           padding: 0%;
-           margin: 0%;
+          font-size: 30px;
+           
         }
        
         #insta :hover{
@@ -307,5 +310,5 @@ footer{
              }
          }
          #redes2 a i{
-             font-size: 88%;
+             font-size: 90%;
          }
