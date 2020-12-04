@@ -5,7 +5,8 @@
 }
 body{
     font-size: 1.2em;
-    background: rgb(75, 76, 75);
+    background: rgb(114, 114, 114);
+    
 }
 
 header{
@@ -15,55 +16,67 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+#container-titulo{
+   width: 50%;
+    font-family: 'Alegreya Sans SC', sans-serif; 
+     text-transform: uppercase;
+    position: relative;
+    bottom: 35%;
+}
+#nombre{
+    letter-spacing: .7cm;
+    font-size: 110%;
+    color: white;
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+    /* efecto maquina de escribir */
+ #nombre span{
+     height: 100%;
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    background-color: rgba(0, 0, 0, 0.979);
     
-   
+
+        animation: maquina 7s infinite alternate ;
+ }
+    @keyframes maquina{
+        from{
+            width: 100%;
+        }
+        to{
+            width: 0%;
+        }
+    }
+    /* fin de efecto maquina de escribir */
+#menu{
+    font-size: 25px;
+    color: white;
+    transform: rotate(-90deg);
+    display: none;
 }
 #contenedor{
     width: 100%;
     height: 800px;
-    background-color: rgba(19, 18, 18, 0.775);
-    
+    background-color: rgba(19, 18, 18, 0.644);
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    
 }
 
 #contenedor h1{
-    margin-top: 300px;
-    color: rgb(18, 132, 132);
+    margin-top: 200px;
+    color: rgb(22, 163, 163);
     font-family: 'Sansita Swashed', cursive;
     font-size: 5.0em;
-   
-}
-#contenedor nav{
-    
-    width: 100%;
-    height: 60px;
-    background-color: rgba(165, 165, 165, 0);
-    display: flex;
-    flex-wrap: nowrap;
-   
-    justify-content: space-evenly;
-}
-    nav a{
-        width: 140px;
-        padding: 12px;
-        margin-top: 10px;
-        text-decoration: none;
-        font-family: 'Heebo', sans-serif;
-        color: rgb(162, 162, 162);
-        text-align: center;
-        
-    }
-    nav a:hover{
-        color: #fff;
-        text-decoration: none;
-        background-color: rgba(17, 92, 93, 0.224);
-        border-bottom: 3px solid rgb(204, 204, 204);
-    }
-
+ }
  main{
      
      min-height: 500px;
@@ -71,45 +84,136 @@ header{
      background-color: rgba(76, 76, 76, 0.809);
     margin: auto;     
  }   
+#contenedor nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(46, 46, 46, 0.678);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 30;
+    backdrop-filter: saturate(380%) blur(30px); 
+    
+}
+    nav a{
+        height: 100%;
+       text-decoration: none;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        color: rgb(197, 197, 197);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+       
+    }
+    nav a:hover{
+        color: #fff;
+        text-decoration: none;
+        
+        border-bottom: 1px solid rgba(40, 204, 233, 0.11);
+  }
+  #tres-d{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+     padding: 0% 5%;
+  }
+  .maqueta{
+      width: 50%;
+        height: 200px;
+      margin: 10% 0%;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  #maqueta1{   
+    transform: perspective(40rem) rotateX(0deg) rotateY(40deg);
+   
+  }
+  #maqueta2{
+    
+    transform: perspective(40rem) rotateX(0deg) rotateY(-40deg);
+    border-radius: 5%;
+}
+#animado4{ 
+    border-radius: 5%;
+    width: 100%;
+    margin-right: 10px;
+    
+}
+
+  .img-propuesta{
+      border-radius: 3.5%;
+      margin: 0% 1.5%;
+      width: 25%;
+      height: 100%;
+     justify-content: space-around;
+     box-shadow: 0px 15px 20px rgba(37, 36, 36, 0.637);
+  }
+
+
+ 
+  @keyframes mover{
+      0%{
+        transform: perspective(40rem) rotateX(0deg) rotateY(0deg);
+        
+       
+      }
+  }
+  
+  
+
+   
+.move{
+        transform: translateX(0%);
+         z-index: 10;
+         transition: all .5s ease-in-out;
+     
+ }
+
+ 
 
  .contenedores{
+     min-height: 100px;
      width: 100%;
      margin-top: 100px;
      min-height: 200px;
      background-color: rgba(5, 57, 57, 0.326);
+     color: rgb(74, 72, 72);
      display: flex;
      display: inline-block;
-     /* flex-wrap: nowrap; */
-    
      margin: auto;
-     color: rgb(74, 72, 72);
-     
-     font-family: 'Heebo', sans-serif;
+    font-family: 'Heebo', sans-serif;
      
  }
  .contenedores h2{
-    
-    width: 100%;
-    color: rgb(220, 220, 220);
-     font-size: 2.0em;
+     height: 60px;
+     color: rgb(220, 220, 220);
     text-transform: uppercase;
     text-align: center;
     font-family: 'Alegreya Sans SC', sans-serif;
-    padding: 20px;
+    /* padding: 20px; */
+    text-shadow: #CCC 5px 15px 30px; 
 }
-#servicios{
-    margin-bottom: 40px;
-}
+
 #servicios #logos{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     color: rgb(174, 171, 171);
     padding-top: 30px;
-
 }   
+#parrafo1{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: white;
+  padding: 7% 0%;  
+  text-shadow: rgba(204, 204, 204, 0.986) 0px 5px 15px; 
+} 
 
-        #servicios #logos i{
+ #servicios #logos i{
             
             text-align: center;
             font-size: 6.5em;
@@ -134,11 +238,6 @@ header{
    display: flex;
    flex-direction: column;
     }
-
-
-
-
-
 #servicios #logos #abajo{
     
     display: flex;
@@ -158,13 +257,8 @@ header{
     
     #profolio #carusel{
         min-height: 200px;
-        padding: 0;
-        
-        
     }
-#porfolio{
-    margin-bottom: 20px;
-}
+
 .comentarios p , h5{
     margin-top: 20px;
      color: rgb(15, 15, 15);
@@ -187,26 +281,28 @@ header{
     margin-top: 1%;
     border: solid 4px rgb(98, 98, 98);
     border-top: solid 5px rgb(86, 85, 85);
-    
+    border-radius: 10px;
 }
 #whats{
-    color: rgb(57, 57, 57);
+    color:rgb(14, 136, 22);
     
 }
  #whats i:hover{
-     color: rgb(31, 187, 42);
+     color: rgb(15, 180, 26);
  }
 .comentarios2 h5{
     color: rgb(241, 241, 241);
     font-weight:bold;
 }
 #contacto{
-    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 2%;
 }
 #contacto h2{
     padding: 0%;
     margin: 0%;
     padding-top: 2%;
+
 }
 #contact{
     margin-top: 30px;
@@ -223,76 +319,147 @@ header{
     color: rgb(184, 183, 182);
     
 }
-#enviar{
+#enviar1{
     display: flex;
     width: 100%;
-    
-    justify-content: center;
+   justify-content: center;
 }
 footer{
     width: 100%;
-    height: 200px;
+    height: 50px;
     text-transform: uppercase;
+  background-color: rgb(131, 130, 130);
     color: rgb(214, 211, 211);
-    padding-top: 2%;
-    
-
-   
+    padding-top: 1.2%;
+    display: flex;
+   font-size: 30px;
+   justify-content: center;
 }
-     footer{
-         margin-top: 10px;
-         background-color: rgb(84, 82, 82);
-         display: flex;
-         flex-direction: column;
-         text-align: center;
-        font-size: 30px;
-     }
-     #redes2{
-         margin-top: 40px;
-         padding: 0% 34%;
-
-         
-         
-          
-         width: 100%;
-         color: rgb(128, 128, 128);
-         display: flex;
-         justify-content: space-around;
-         
-     }
+    .container-redes{
+        height: 70%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
      
-        footer a {
-           
-            color: rgb(138, 138, 138);
-          font-size: 30px;
-           
+      footer a{
+            width: 40%;
+            height: 3px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+           color: rgb(66, 65, 65);
+             font-size: 1.6rem;
         }
-       
-        #insta :hover{
-           color: rgb(255, 14, 163);
-        } #face i:hover{
-            color: rgb(75, 75, 181);
-         } #link i:hover{
-            color: rgb(37, 32, 189);
-         } #git i:hover{
-            color: rgb(68, 68, 68);
-         }
+       footer #insta:hover{
+           text-decoration: none;
+          color: rgb(248, 45, 140);
+       }
+       footer #face:hover{
+        text-decoration: none;
+       color: rgb(36, 105, 252);
+      }
+      footer #link:hover{
+        text-decoration: none;
+       color: rgb(14, 12, 151);
+      }
+      footer #git:hover{
+        text-decoration: none;
+       color: rgb(179, 179, 179);
+    }
 
+    @media(max-width: 700px){
+        
+       
+        #contenedor h2{
+            font-size: 50%;
+           width: 100%;
+       
+        }
+        #container-titulo{
+          width: 70%;
+            display: flex;
+           justify-content: center;
+        }
+        .maqueta{
+            margin-top: 20%;
+        }
+    }
          @media(max-width: 768px){
-                header{
+            body{
+                width: 700px;
+            }
+            header{
                width: 100%;
-               
+               height: 500px;
+            }
+           
+            #menu{
+                display: block;
+                position: fixed;
+               left: 10px;
+                top: 10px;   
+               color: rgb(88, 174, 177);
+               border-radius: 20px 20px 20px 20px;
+               border: solid 2px rgb(255, 255, 255);
+               z-index: 35;
             }
             #contenedor h1{
-                font-size: 1.5em;
+                text-align: center;
+                width: 100%;
+                font-size: 2.5em;
+                position: relative;
+                bottom: 8%;
             }
+            
             #contenedor nav{
+                width: 100%;
+                 height: 100%;
+                 display: flex;
                 flex-direction: column;
-                margin-bottom: 25%;
+                position: fixed;
+                text-transform: uppercase;
+                background-color: rgba(8, 59, 66, 0.774);
+                padding: 15% 0%;
             }
-            #abajo{
-                margin-top: 30px;
+             nav{ 
+            transform: translateX(-100%)
             }
+           #contenedor nav a{
+               height: 50%;
+               font-weight: 600;
+              margin: auto;
+               color: rgb(207, 204, 204);
+                 border-bottom: 1px solid white;
+                position: relative;
+                
+            }
+            #link1{
+                    border-top:1px solid white; ;
+            }
+             #container-titulo{
+                 width: 70%;
+                 bottom: 57%;
+             }
+             #nombre{
+                 font-size: 70%;
+                letter-spacing: .3cm;
+             }
+            
+              .img-propuesta{
+                   position: relative;
+                   left: 13%;
+                 top: 50%;
+                  width:48%;
+                  height: 60%;
+              }
+              #servicios{
+                  padding-top: 20%;
+              }
+              #servicios h2{
+                  margin-top: 10%;
+              }
 
             body{
                  width: 100%;
@@ -300,20 +467,16 @@ footer{
              main{
                width: 100%;
              }
-             footer{
-                 margin-top: 40px;
+             
+           
+             #contact{
+                 height: 30%;
              }
-             #contacto{
-                 min-height: 20px;
+             #contacto h2{
+                margin-top: 10%;
              }
-             #redes{
-                 margin-top: 80px;
+             .container-redes{
+                 padding-top: 3%;
              }
-             #redes2 a{
-                 padding-left: 15px;
-                 padding-right: 15px;
-             }
-         }
-         #redes2 a i{
-             font-size: 90%;
-         }
+            }
+            
